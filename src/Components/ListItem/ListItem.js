@@ -9,7 +9,8 @@ const ListItem = (props) => {
 
             <div className='right'>
                 <h5 className='cont'>{props.contact_no}</h5>
-                <button type="submit">Wish Now</button>
+                <button ><a target="_blank" href="https://www.instagram.com/">Wish Now</a>
+</button>
             </div>
 
            
