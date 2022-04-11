@@ -1,0 +1,41 @@
+.listcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px;
+    font-size: large;
+    border-radius: 15px;
+}
+
+.listcard .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.listcard .right {
+    width: 100%;
+    margin-right: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.listcard:hover {
+    box-shadow: 0 4px 100px 0 rgb(105, 91, 197);
+}
+
+.listcard .right button {
+    background-color: chocolate;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 250px;
+    /* margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; */
+}

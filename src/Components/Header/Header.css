@@ -1,0 +1,13 @@
+.header {
+    align-items: center;
+    height: 10%;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.header {
+    margin : auto;
+    text-align: center;
+}

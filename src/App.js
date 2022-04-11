@@ -1,23 +1,70 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import Form from './Components/Form/Form';
+import List from './Components/List/List';
+import Header from './Components/Header/Header';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+//   const Items = [
+//     {
+//       id: 1,  
+//       name: "Suraj Shah",
+//         date: "24-08-1999",
+//         contact_no: "907987897"
+//     },
+//     {
+//         id:2,
+//         name: "Mansi Singh",
+//         date: "24-08-2000",
+//         contact_no: "997987890"
+//     },
+//     {
+//         id:3,
+//         name: "Rahul Deevan",
+//         date: "22-06-1998",
+//         contact_no: "907987897"
+//     },
+//     {
+//         id:4,
+//         name: "Rakesh Gupta",
+//         date: "15-01-2001",
+//         contact_no: "899785697"
+//     },
+
+// ]
+
+const [Items,setItems] = useState(
+[
+{
+    id: 1,  
+    name: "Suraj Shah",
+    date: "24-08-1999",
+    contact_no: "907987897"
+},
+{
+    id:2,
+    name: "Mansi Singh",
+    date: "24-08-2000",
+    contact_no: "997987890"
+},
+{
+    id:3,
+    name: "Rahul Deevan",
+    date: "22-06-1998",
+    contact_no: "907987897"
+},
+{
+    id:4,
+    name: "Rakesh Gupta",
+    date: "15-01-2001",
+    contact_no: "899785697"
+},])
+return (
+    <div>
+      <Header/>
+      <div className="App">
+        <List Items = {Items}/>
+        <Form Items = {Items} setItems = {setItems} />
+      </div>
     </div>
   );
 }
